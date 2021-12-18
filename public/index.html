@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/JavaScript" src="script.js" defer></script>
+    <title>P2-OTES12</title>
+</head>
+<body>
+    <header>
+        <h2>Acompanhamento de Melhorias nos Sistemas da Delta Company</h2>
+        <a id="button-requisicoes" href="#">Requisições</a>
+        <a id="button-manutencoes" href="#">Manutenções</a>
+        <a id="button-pendentes" href="#">Pendentes</a>
+        <a id="button-sistemas" href="#">Sistemas</a>
+    </header>
+    <main>
+        <div id="requisicoes" class="div-title">
+            <form id="requisicao" method="#">
+                <h3>Cadastro de Requisição</h3>
+
+                <label for="nome-requisitante">Nome do Requisitante 
+                    <input id="nome-requisitante">
+                </label>
+
+                <label for="data-requisicao">Data de Requisição
+                    <input id="data-requisicao" type="date">
+                </label>
+
+                <label for="sistema-afetado">Sistema Afetado
+                    <input id="sistema-afetado"></input>
+                </label>
+
+                <label><button type="submit">Enviar</button></label>
+            </form>
+
+            <table id="table-requisicoes">
+                <tr>
+                    <th>Nome do Requisitante</th>
+                    <th>Data de Requisição</th>
+                    <th>Sistema afetado</th>
+                    <th>Situação</th>
+                    <th>ID</th>
+                    <th>Ações</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="manutencoes" class="div-title" hidden>
+            <h3>Acompanhamento de Manutenção</h3>
+
+            <table id="table-manutencoes">
+                <tr>
+                    <th>Nome do Requisitante</th>
+                    <th>Data de Requisição</th>
+                    <th>Sistema afetado</th>
+                    <th>Situação</th>
+                    <th>ID</th>
+                    <th>Ações</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="pendentes" class="div-title" hidden>
+            <h3>Relatório de Manutenções Pendentes</h3>
+
+            <table id="table-pendentes">
+                <tr>
+                    <th>Nome do Requisitante</th>
+                    <th>Data de Requisição</th>
+                    <th>Sistema afetado</th>
+                    <th>Situação</th>
+                    <th>ID</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="sistemas" class="div-title" hidden>
+            <h3>Resumo Situação dos Sistemas</h3>
+            <h3>Estoque</h3>
+            <table id="sistema-estoque">
+                <tr>
+                    <th>Nome do Requisitante</th>
+                    <th>Data de Requisição</th>
+                    <th>Sistema afetado</th>
+                    <th>Situação</th>
+                    <th>ID</th>
+                </tr>
+            </table>
+            <h3>Vendas</h3>
+            <table id="sistema-vendas">
+                <tr>
+                    <th>Nome do Requisitante</th>
+                    <th>Data de Requisição</th>
+                    <th>Sistema afetado</th>
+                    <th>Situação</th>
+                    <th>ID</th>
+                </tr>
+            </table>
+            <h3>Compras</h3>
+            <table id="sistema-compras">
+                <tr>
+                    <th>Nome do Requisitante</th>
+                    <th>Data de Requisição</th>
+                    <th>Sistema afetado</th>
+                    <th>Situação</th>
+                    <th>ID</th>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+</body>
+</html>
